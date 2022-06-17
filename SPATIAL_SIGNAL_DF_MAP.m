@@ -19,12 +19,12 @@ poolobj = gcp;
 
 %% user inputs
 fsize = 9; %the font size
-SDM_extent = 1;
+SDM_extent = 1; %adjust to suit - usually between 0.5-2
 SDM_bins_start = -SDM_extent;
 SDM_bins_end = SDM_extent;
 
-kf = 1.65; %default
-ICF = 3.3;
+% kf = 1.65; %default
+% ICF = 3.3;
 
 % kf = 4.1; %Al dataset R18_53705
 % ICF = 1.6;
@@ -54,8 +54,8 @@ ICF = 3.3;
 % ICF = 1.65;
 
 
-% kf = 3.84; %In738 dataset R18_59377
-% ICF = 1.59;
+kf = 3.84; %In738 dataset R18_59377
+ICF = 1.59;
 
 % kf = 3.93; %H282 dataset R04_23087
 % ICF = 1.66;
@@ -88,7 +88,7 @@ detEff = 0.57;
 global perc %make global
 perc  = zeros(1,10); 
 %% read the epos
-filename = 'R18_59205-v01.epos';
+filename = 'R18_59377-v01.epos';
 [dx,dy,~,~,~,m,~,vdc,vp,~,~] = readepos(filename);
 
 SaveFileName = [filename 'signal_map_all02.png'];
@@ -96,7 +96,7 @@ SaveFileName = [filename 'signal_map_all02.png'];
 %% region of interest
 
 %radius of ROI
-R = 2;
+R = 2; %adjust to suit (usually choose between 2-4)
 
 %ion number limits (z slice)
 s1 = 3e6;
@@ -111,7 +111,7 @@ vdc02 = vdc(s1:s2);
 vp02 = vp(s1:s2);
 
 %detector area crop
-rad = 30;
+rad = 30; %adjust to suit
 keep = dx02.^2 + dy02.^2 < rad.^2;
 
 dx02 = dx02(keep);
@@ -130,7 +130,7 @@ dymax = max(dy02)+0.01;
 
 %sample spacing
 
-s_space = 1; %mm %note use the interp2 function to change the spacing/binning to suit other maps. 
+s_space = 1; %mm %note use the interp2 function to change the spacing/binning to suit other maps. Usually choose between 0.5-2 
 
 xbins = ceil(norm(dxmax-dxmin)/s_space)+1;
 ybins = ceil(norm(dymax-dymin)/s_space)+1;
@@ -225,8 +225,8 @@ parfor i = 1:xbins
         if filt_element == true
         
         
-        %RANGES = [8.847, 9.146; 13.372, 13.898]; %Al
-        RANGES = [13.375, 13.818]; %Al
+        RANGES = [8.847, 9.146; 13.372, 13.898]; %Al 3+ 2+
+        %RANGES = [13.375, 13.818]; %Al
         %RANGES = [13.347, 13.898; 26.855, 27.357]; %2+, 1+
        
         

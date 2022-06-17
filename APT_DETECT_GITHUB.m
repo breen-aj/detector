@@ -1,7 +1,6 @@
 %this script combines correlative crystallography metrics of the detector hit maps
 close all
 clear all
-c
 
 %copyright (C) 2022
 %author: A.J. Breen, The University of Sydney, 2022
