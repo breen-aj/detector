@@ -1,25 +1,26 @@
 function [x, y, z, R_start, R_end] = atomProbeRecon05(detx, dety,h,k, V, kf, ICF, avgDens, Fevap, flightLength, detEff)
 %atom probe reconstruction after: Gault et al., Ultramicroscopy 111 (2011) 448 - 457
-%detx, dety are the detector hit coordinates in mm
-%kf is the field factor and ICF is the image compression factor
+% detx, dety are the detector hit coordinates in mm
 % h and k are the x and y centres of the detector ROI
+% V is the volage (standing voltage + voltage pulse) that the ions were
+% evaporated at
+% kf is the field factor and ICF is the image compression factor
+% ICF is the image compression factor
+% avgDens is the theoretical average density of the specimen being analysed
+% in V/nm^3
+% Fevap is the average evaporation field of the ions in V/nm
+% flightLength is the flight path length that the APT data was collected at
+% detEff is the detector efficiency of the APT instrument used to collect
+% the data
 
+% author: Peter Felfer, Australian Centre for Microscopy and Microanalysis,
+% The University of Sydney, ~ 2015
+
+% with minor modifications by Andrew Breen, Australian Centre for Microscopy and Microanalysis, The University of Sydney, 2022
+
+% licence: BSD 2-Clause License - see LICENCE
 
 %% constants and variable setup
-
-% instrument parameters
-%flightLength = 90; % flight path length in mm
-%detEff = 0.57; % detector efficiency
-
-% specimen parameters
-
-% atomic density in atoms / nm3 
-%avgDens = 60.24; 
-
-% evaporation field in V/nm
-%Fevap = 19; 
-
-%V = V * 1000; %voltage provided in kV
 
 % detector coordinates in polar form
 [ang, rad] = cart2pol(detx-h, dety-k);

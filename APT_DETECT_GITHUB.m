@@ -1,10 +1,14 @@
 %this script combines correlative crystallography metrics of the detector hit maps
-close all
-clear all
 
 %copyright (C) 2022
-%author: A.J. Breen, The University of Sydney, 2022
+%author: Andrew Breen, The University of Sydney, 2022
 %licence: BSD 2-Clause License - see LICENCE
+
+close all
+clear all
+clc
+
+
 
 %read in the APT dataset
 [dx,dy,x,y,z,m,t,vdc,vp,nulls,Nat_pulse]=readepos('R18_59377-v01.epos'); %AM In738 test file. Please replace with your own .epos file 
@@ -62,8 +66,8 @@ sm = 0; %smooth
 
 %% this calculates density of a particular species
 %ranges Al species R18_59377. Update for your ion charge states
-RANGES = [8.847, 9.146; 13.372, 13.898]; %3+, 2+
-%RANGES = [13.347, 13.898; 26.855, 27.357]; %2+, 1+
+RANGES = [8.847, 9.146; 13.372, 13.898]; %Al 3+, 2+
+%RANGES = [13.347, 13.898; 26.855, 27.357]; %Al 2+, 1+
 
 
 %% this calculated electric field map based on RANGES

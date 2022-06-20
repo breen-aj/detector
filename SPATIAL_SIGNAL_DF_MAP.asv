@@ -3,9 +3,6 @@ clear all
 clc
 close all
 
-%copyright (C) 2022
-%author: A.J. Breen, The University of Sydney, 2022
-%licence: BSD 2-Clause License - see LICENCE
 
 poolobj = gcp;
 
@@ -118,7 +115,7 @@ parfor i = 1:xbins
     updateWaitbar();
     for j = 1:ybins
         
-        if N(j, i) < 10 %arbitrary small value to aviod calulations on pixels at the edge of the detector data
+        if N(j, i) < 10 %set this value based on the
             Int_val(j, i) = 0;
             continue
         end
