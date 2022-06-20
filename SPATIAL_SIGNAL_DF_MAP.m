@@ -5,7 +5,7 @@ close all
 
 %copyright (C) 2022
 %author: A.J. Breen, The University of Sydney, 2022
-%licence: BSD 2-Clause License - see LICENCE
+%licence: BSD 2-Clause License - see LICENSE
 
 poolobj = gcp;
 

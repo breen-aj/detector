@@ -2,7 +2,7 @@
 
 %copyright (C) 2022
 %author: Andrew Breen, The University of Sydney, 2022
-%licence: BSD 2-Clause License - see LICENCE
+%licence: BSD 2-Clause License - see LICENSE
 
 close all
 clear all

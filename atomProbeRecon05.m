@@ -18,7 +18,7 @@ function [x, y, z, R_start, R_end] = atomProbeRecon05(detx, dety,h,k, V, kf, ICF
 
 % with minor modifications by Andrew Breen, Australian Centre for Microscopy and Microanalysis, The University of Sydney, 2022
 
-% licence: BSD 2-Clause License - see LICENCE
+% licence: BSD 2-Clause License - see LICENSE
 
 %% constants and variable setup
 

@@ -6,7 +6,7 @@ function [BINS,Edges] = voxelise_2D(x,y, RES)
 
 %copyright (C) 2022
 %author: A.J. Breen, The University of Sydney, 2022
-%licence: BSD 2-Clause License - see LICENCE
+%licence: BSD 2-Clause License - see LICENSE
 
 mi = min(min(x),min(y));
 mx = max(max(x),max(y));

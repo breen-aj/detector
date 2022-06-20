@@ -11,7 +11,7 @@ function [N_new,a,b] = EVAPSEQ_MAP(dx, dy, m, sm, RANGES, steps)
 
 %copyright (C) 2022
 %author: A.J. Breen, The University of Sydney, 2022
-%licence: BSD 2-Clause License - see LICENCE
+%licence: BSD 2-Clause License - see LICENSE
 
 
 fsize = 9;

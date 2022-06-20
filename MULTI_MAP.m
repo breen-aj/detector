@@ -10,7 +10,7 @@ function [N1, a, b] = MULTI_MAP(dx, dy, Nat_pulse, sm)
 
 %copyright (C) 2022
 %author: A.J. Breen, The University of Sydney, 2022
-%licence: BSD 2-Clause License - see LICENCE
+%licence: BSD 2-Clause License - see LICENSE
 
 fsize = 9;
 
