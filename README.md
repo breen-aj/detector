@@ -16,9 +16,7 @@ Open the script: 'APT_DETECT_GITHUB.m' in the editor. Have the .epos file of int
 
 The code is currently configured to perform detector mapping on the listed metrics above for 2 million sequential ion hits. Test data used in the journal article listed above can be found at:
 
-[test data](https://cloudstor.aarnet.edu.au/plus/s/uQ59EGNXxxv2g2C, "test data")
- 
-(link expires on the 17/12/2022)
+[test data](https://cloudstor.aarnet.edu.au/plus/s/uQ59EGNXxxv2g2C)
 
 ## Spatial signal mapping
 Open the main script "SPATIAL_SIGNAL_DF_MAP.m". Have the .epos file of interest in the current folder. Change the file name in line 29 to your .epos file of interest. Change lines 40-41 to set the sequence range of interest (typically 1-2 million ions). Follow the in-script and in-function comments for additional modifications and changes.
