@@ -14,9 +14,9 @@ Download the repository and add the code to your read path in MATLAB.
 ## Mapping density, electric field distribution, distance between successive evaporation events and multiple hits 
 Open the script: 'APT_DETECT_GITHUB.m' in the editor. Have the .epos file of interest in the current folder/working directory. Change the file name in line 10 of APT_DETECT_GITHUB.m to your .epos file of interest. Change the detection event sequence start and end points in line 35 and 36. Usually a sequence of 1-2 million ions from a single grain works best. However, for the electric field distribution map, a larger number of sequential detection events for each grain of interest (~ > 10 million) performs better. For nanocrystalline grains you may want to use less than 1 million sequential ions to ensure all ions are coming from the same grain - otherwise there will be overlap in the crystallographic patterns. There are also numerous points throughout this main script (and the called functions) where you may want to modify the code. Please follow the in-script and in-function comments for additional information.
 
-The code is currently configured to perform detector mapping on the listed metrics above for 2 million sequential ion hits from the gamma-prime phase of a Ni-based superalloy (Inconel 738) APT dataset. This example data can be found at the following link:
+The code is currently configured to perform detector mapping on the listed metrics above for 2 million sequential ion hits. Test data used in the journal article listed above can be found at:
 
-[IN738 test data](https://unisyd-my.sharepoint.com/:f:/g/personal/andrew_breen_sydney_edu_au/EsWXSPq9giZJlmwQobTfwCYBSYqzOus8BAOpAHsLwj4AiQ?e=FtcplU, "IN738 test data")
+[test data](https://cloudstor.aarnet.edu.au/plus/s/uQ59EGNXxxv2g2C, "test data")
  
 (link expires on the 17/12/2022)
 
