@@ -1,6 +1,6 @@
-# Contributers to this repository
+# Contributors to this repository
 
-## contributers
+## contributors
 main: Andrew Breen (andrew.breen@sydney.edu.au)
 readepos.m : Baptiste Gault (b.gault@mpie.de)
 atomProbeRecon05.m: Peter Felfer (peter.felfer@fau.de) - with modifications by Andrew Breen 
