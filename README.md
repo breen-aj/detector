@@ -3,7 +3,9 @@ This repository contains matlab code for sophisticated multimetric APT detector 
 
 Please refer to the following journal article for details:
 
-*under review - will be updated shorty
+Breen AJ, Day AC, Lim B, Davids WJ, Ringer SP. Revealing latent pole and zone line information in atom probe detector maps using crystallographically correlated metrics. Ultramicroscopy. 2023 Jan 1;243:113640.
+
+[https://doi.org/10.1016/j.ultramic.2022.113640](https://doi.org/10.1016/j.ultramic.2022.113640)
 
 Please cite this article if you use the code for any presented/published works.
 
